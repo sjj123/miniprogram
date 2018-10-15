@@ -1,0 +1,51 @@
+/* pages/login/login.wxss */
+.banner{
+  width: 100%;
+}
+.banner image{
+  width: 100%;
+  height: 400rpx;
+}
+.aurithorBox{
+  margin-top: 50rpx;
+  padding: 0 40rpx;
+}
+.btn{
+  background: #1aad19;
+  color: #fff;
+  font-size: 38rpx;
+  border: none
+}
+.btnhover{
+  background: #85ca85;
+}
+.phonetext{
+  font-size: 30rpx;
+  text-align: center;
+}
+.InputPhoneBox{
+  background: #fff;
+  padding: 0 40rpx;
+}
+.formList{
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  color: #333;
+  font-size: 32rpx;
+}
+.formList:first-child{
+  border-bottom: 1px solid #eee;
+}
+.formList text{
+  width: 150rpx;
+}
+.formList input{
+  height: 80rpx;
+  width: 350rpx;
+  padding: 0 10rpx;
+  color: #666;
+}
+.loginbtn{
+  padding: 0 40rpx;
+}

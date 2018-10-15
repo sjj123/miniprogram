@@ -1,0 +1,12 @@
+/**app.wxss**/
+page{
+  background: #eee;
+  font-size: 32rpx;
+}
+.mart30 {
+  margin-top: 30rpx;
+}
+
+.blue {
+  color: #1478cf;
+}

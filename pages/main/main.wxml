@@ -1,0 +1,11 @@
+<!--pages/main/main.wxml-->
+<view class='container'>
+  <view class='main'>
+    <image src='../src/bg.jpg' class='bgimage'></image>
+    <navigator url='../my/my' class='jumpBox' hover-class='none'>
+      <view>
+        <image src='../src/people.png'></image>
+      </view>
+    </navigator>
+  </view>
+</view>

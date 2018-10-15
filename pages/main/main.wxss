@@ -1,0 +1,29 @@
+/* pages/main/main.wxss */
+.main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.bgimage{
+  width: 100%;
+  height: 100%;
+}
+.jumpBox{
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  width: 130rpx;
+  height: 80rpx;
+  background: #fff;
+  border-top-left-radius: 40rpx;
+  border-bottom-left-radius: 40rpx;
+  box-shadow: 2px 2px 40px rgba(211, 211, 211, 0.50);
+  padding-left: 10rpx;
+}
+.jumpBox image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+}

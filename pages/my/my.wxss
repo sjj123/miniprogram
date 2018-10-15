@@ -1,0 +1,45 @@
+/* pages/my/my.wxss */
+.userBox{
+  box-sizing: border-box;
+  height: 400rpx;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:134rpx;
+  font-size:32rpx; 
+}
+.userBox image{
+  width: 80rpx;
+  height: 80rpx;
+  background: #fff;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+}
+.myListBox{
+  background: #fff;
+}
+.myList{
+  height: 80rpx;
+}
+.bannerimg{
+  margin-bottom: 80rpx;
+}
+.bannerimg image{
+  width: 750rpx;
+  height: 314rpx;
+  vertical-align: bottom;
+}
+.changeAccount{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fff;
+  border-top: 1px solid #eee;
+  font-size: 32rpx;
+}

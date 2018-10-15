@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/login/login",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "随笔",
+    "navigationBarTextStyle": "black"
+  }
+}

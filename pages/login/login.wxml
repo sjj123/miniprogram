@@ -1,0 +1,25 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class='banner'>
+    <image src='../src/banner.png'></image>
+  </view>
+  <view class='aurithorBox' wx:if='{{!isInputPhone}}'>
+    <button class='btn' open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber' hover-class="btnhover">微信用户快速登录</button>
+    <view class='blue mart30 phonetext' bindtap='showInputPhoneBox'>输入手机号码登录/注册</view>
+  </view>
+  <form bindsubmit="registerSubmit"wx:else>
+    <view class='InputPhoneBox' >
+      <view class='formList'>
+        <text>手机号</text>
+        <input name='phoneNumber' maxlength='11' placeholder='输入手机号码'/>
+      </view>
+      <view class='formList'>
+        <text>密码</text>
+        <input name='secret' placeholder='输入密码'/>
+      </view>
+    </view>
+    <view class='loginbtn mart30'>
+      <button class='btn' formType="submit" hover-class="btnhover">登录</button>
+    </view>
+  </form>
+</view>
