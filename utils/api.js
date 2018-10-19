@@ -1,7 +1,7 @@
 //获取应用实例
 const app = getApp()
 //接口地址
-const HOST = 'http://101.201.34.77:40080/renren-api'
+const HOST = 'https://tianpingcz.com/renren-api'
 //接口地址
 const apiList = {
   //微信授权登录
@@ -30,10 +30,13 @@ const $https = (that, url, params, method, success, fail) =>{
         method: method,
         data: params,
         success: function (res) {
-          console.log('请求成功返回' + res)
+          console.log('请求成功返回' + res.data)
+          if(res.data.code == 0){
+            success(res.data)
+          }
         },
         fail: function (res) {
-          console.log('请求失败返回' + res)
+          console.log('请求失败返回' + res.data)
         },
         complete: function (res) {
           console.log('请求完毕返回' + res)
@@ -67,6 +70,12 @@ const $https = (that, url, params, method, success, fail) =>{
                   success: function (res) {
                     if(res.data.code == 0){
                       success(res.data)
+                    }
+                    else{
+                      wx.showModal({
+                        title: '错误'+res.data.code,
+                        content: res.data.msg,
+                      })
                     }
                   },
                   fail: function (res) {

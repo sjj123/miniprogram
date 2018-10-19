@@ -12,7 +12,7 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         // http://timestamp.lanmaoly.com:40080/api/v1.0/wechat/login
           wx.request({
-          url: 'http://101.201.34.77:40080/renren-api/api/v1.0/wechat/login',
+            url: 'https://tianpingcz.com/renren-api/api/v1.0/wechat/login',
           method:'POST',
           data: {
             code: res.code

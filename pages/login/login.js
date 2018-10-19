@@ -99,7 +99,23 @@ Page({
   },
   //登录或注册
   registerSubmit:function(e){
+    var that = this;
     console.log(e.detail.value)
-    
+    var params = e.detail.value
+    //注册
+    // that, url, params, method, success, fail
+    api.$https(
+      that,
+      api.apiList.register,
+      params,
+      'POST',
+      function(data){
+        console.log(data)
+      },
+      function(res){
+        console.log(res)
+      }
+      )
+
   }
 })
