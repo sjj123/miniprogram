@@ -10,7 +10,7 @@
   <form bindsubmit="registerSubmit"wx:else>
     <view class='InputPhoneBox' >
       <view class='formList'>
-        <text>手机号</text>
+        <text>手机号码</text>
         <input name='mobile' maxlength='11' placeholder='输入手机号码'/>
       </view>
       <view class='formList'>
